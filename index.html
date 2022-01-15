@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page H4C</title>
+    <link rel="icon" href="assets/images/H4C_redesigned_2@300x.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/navstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/mediaquery.css">
+</head>
+
+<body>
+    <!-- navbar section -->
+        <div id="overlay">
+          <a href="#">Link1</a>
+          <a href="#">Link2</a>
+          <a href="#">Link3</a>
+          <a href="#">Link4</a>
+        </div>
+        <div class="nav">
+          <div class="logo"></div>
+          <div id="hamburger">
+            <div></div>
+          </div>
+        </div>
+    <!-- super parent for background gif -->
+    <div id="particles-js"></div>
+    <div class="superParent" >
+        <div class="overlay"></div>
+        <!-- home parent for all of home page elements -->
+        <div class="homeParent">
+            <!-- ssit logo -->
+            <div class="ssit-logo">
+                <img src="./assets/images/IEEE_SSIT_Logo-e1589395691479 2.png">
+            </div>
+            <!-- headings for both mobile and desktop -->
+            <div class="heading">
+                <!-- before tile  -->
+                <div class="before-title">&nbspBIGGEST HACKATHON in VIT</div>
+                <!-- title and title images -->
+                <div class="title">
+
+                    <!-- mobile image -->
+                    <img class="h4cmob" src="assets/images/H4C_redesigned_2@300x.png">
+
+                    <!-- h4c title -->
+                    <img class="h4ctitle" src="assets/images/Mask Group.png">
+
+                    <!-- adding timer along with logo as flexbox -->
+                    <div class="flexbox1">
+                        <!-- links of homepage -->
+                        <ul class="links">
+                            <!-- timer for desktop -->
+                            <div class="timer-desk">
+                                <div class="dhm">
+                                    <span class="days">DAYS</span>
+                                    <span class="hours">HOURS</span>
+                                    <span class="minutes">MINUTES</span>
+                                </div>
+                            </div>
+                            <!-- timer for mobile -->
+                        </ul>
+                        <ul class="btns">
+                            <li><button id="register">Register Now</button></li>
+                            <li><a href="" target="_blank">
+                                  <button id="register">
+                                    <img
+                                    height="32px"
+                                    src="./assets/images/discord-logo.png"
+                                    alt="discord"
+                                    />
+                                    Join our discord
+                                  </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/assets/Brochure.pdf" download>
+                                <button id="register">
+                                    <i class="icon fas fa-download"></i>
+                                    Download Brochure
+                                </button>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- desktop image -->
+                        <img class="h4cdesk" src="assets/images/H4C_redesigned_2@300x.png">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="about">
+
+        </div>
+    </div>
+    
+<script src="./particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+    <script>
+      (() => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("overlay");
+  let open = false;
+
+  const change = () => {
+    if (!open) {
+      hamburger.classList.add("open");
+      menu.classList.add("menu");
+    } else {
+      hamburger.classList.remove("open");
+      menu.classList.remove("menu");
+    }
+    open = !open;
+  };
+
+  hamburger.addEventListener("click", change);
+})();
+
+    </script>
+</body>
+
+</html>

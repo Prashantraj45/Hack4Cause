@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    overflow:hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #212121;
+    
+}
+#particles-js{
+z-index: -500;
+position: absolute;
+}
+/* Homepage styling */
+.superParent{
+    height:100vh;
+    z-index: 1000;
+    position: absolute;
+    
+}
+/* ssit logo positioning */
+.ssit-logo{
+    margin-left:3.4rem;
+    padding-top:2rem;
+}
+.ssit-logo img{
+    float:left;
+    height:auto;
+    width:10.5rem;
+}
+/* heading styling and positioning */
+.heading{
+    margin-left:20.7rem;
+    margin-top:1.0rem;
+}
+.before-title{
+    margin-top:10.5rem;
+    color:white;
+    font-family: 'Poppins',sans-serif;
+    font-size:2rem;
+}
+.h4ctitle{
+    width:auto;
+    height:7rem;
+}
+.flexbox1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:4.5rem;
+    margin-top:0;
+}
+.links{
+    list-style-type: none;
+}
+.links li{
+    text-align: center;
+    margin:2rem;
+    border:2px solid #EB1616;
+    border-radius:5rem;
+    padding:0.5rem;
+}
+.links li a{
+    padding:0.5rem;
+    color:white;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+.links li:hover{
+    color:#ffeded;
+    background-color:#EB1616;
+}
+
+.btns{
+    display: block;
+    list-style-type: none;
+    }
+    .btns li{
+      padding: 20px;
+    }
+    #register {
+      font-family: "Poppins";
+      font-weight: 600;
+      padding: 1rem;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      width: 250px;
+      color: white;
+      background: #EB1616;
+    }
+    
+    #register:hover { 
+      border: 10px solid #EB1616;
+      color: white;
+      border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATElEQVRYw+3YwQ0AIAgEwcNi7ID+C7ADmsEa7mFCzM5bzT7BKGXLsHXCOe++7194qJS9NAxBBBFEEEEAAPyGNYh5iCCCCCLIE9O+9C7MERJ/HwIJlAAAAABJRU5ErkJggg==) 12;
+      box-sizing: border-box;
+      background: transparent;
+    }    
+.h4cdesk{
+    height:20rem;
+    transform: rotate(-23.03deg);
+}
+/*removing the mobile div of h4c logo */
+.h4cmob{
+    display:none;
+}
+/* removing mobile div of timer */
+.timer-mob{
+    display:none;
+}
+/* styling and positioning of timer in desktop */
+.timer-desk{
+    margin:2rem;
+    text-align: center;
+    color:#ffeded;
+    display: flex;
+    flex-direction: column;
+}
+.dhm{
+    font-size:2rem;
+    font-family: 'Poppins',sans-serif;
+}
+.overlay {
+    background-color: #f8f6f6;
+    width: 110px;
+    height: 340px;
+    margin-top: 17%;
+    border-radius: 100% / 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    -webkit-box-shadow: 10px 10px 41px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 41px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 41px -10px rgba(0,0,0,0.75);
+  }
+  li,
+ul {
+  list-style: none outside none;
+  margin: 0;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: #252323;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
