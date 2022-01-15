@@ -72,6 +72,7 @@ body{
   .homeparent{
     position: absolute;
     z-index: 100;
+    width: 100%;
 }
 /* ssit logo positioning */
 .ssit-logo{
@@ -85,11 +86,10 @@ body{
 }
 /* heading styling and positioning */
 .heading{
-    margin-left:20.7rem;
     margin-top:1.0rem;
 }
 .before-title{
-    margin-top:10.5rem;
+    margin-top:7rem;
     color:white;
     font-family: 'Poppins',sans-serif;
     font-size:2rem;
@@ -102,7 +102,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-right:4.5rem;
+    padding: 50px;
     margin-top:0;
 }
 .links{
@@ -205,13 +205,6 @@ body{
     
     
   }
-  .about:hover{
-    background-image: url("./images/background.gif");
-    animation: 10s linear infinite ;
-    background-size: cover;
-    background-position: center;
-    animation-play-state:running;
-  }
   
 #clients {
   padding: 30px 0;
@@ -258,7 +251,7 @@ margin-top: 15%;
 .dom{
   height: 140vh;
 }
-.dom h1{
+.dom h1,.card__title{
   text-align: center;
   font-size: 3em;
 }
@@ -298,7 +291,7 @@ margin-top: 15%;
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:flex-end;
 }
 
 .card {
@@ -391,20 +384,44 @@ margin-top: 15%;
   }
   #a2,#a3,#a4{
     margin-top: 10%;
+    font-size: 1.5em;
   }
   .about h2{
-    font-size: 3em;
+    font-size: 2em;
     padding-bottom: 40px;
+    padding-top: 20px;
   }
   .dom{
-    height: 150vh;
+    height: 100vh;
     margin-bottom: 120%;
     margin-top: 20%;
   }
   .about p{
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 1em;
+  }
+  .card {
+    margin: 10px;
+    padding: 10px;
+    width: 280px;
+    min-height: 140px;
+    display: grid;
+    grid-template-rows: 10px 25px 10px 25px;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  .card__title{
+    font-weight: 250;
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .dom h1{
+    font-size: 2em;
+  }
+  .flexbox1{
+    padding:0px;
   }
 }
