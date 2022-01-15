@@ -190,16 +190,19 @@ body{
    .about h2{
     text-align: center;
     left: 50%;
+    padding-bottom: 5%;
     font-size: 4.5em;
   }
   .about p{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 16%;
+    margin-right: 16%;
+    font-size: 1.4em;
   }
   .about{
     height: 100vh;
-    padding-top: 14%;
+    padding-top: 5%;
+    
     
   }
   .about:hover{
@@ -254,7 +257,6 @@ margin-top: 15%;
 }
 .dom{
   height: 140vh;
-
 }
 .dom h1{
   text-align: center;
@@ -391,6 +393,18 @@ margin-top: 15%;
     margin-top: 10%;
   }
   .about h2{
-    font-size: 2em;
+    font-size: 3em;
+    padding-bottom: 40px;
+  }
+  .dom{
+    height: 150vh;
+    margin-bottom: 120%;
+    margin-top: 20%;
+  }
+  .about p{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
   }
 }
