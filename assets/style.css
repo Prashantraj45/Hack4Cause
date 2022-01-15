@@ -14,6 +14,9 @@ body{
     color: white;
     
 }
+.nav{
+  margin-top: 30px;
+}
 
 .count-particles{
     background-color: transparent;
@@ -97,13 +100,14 @@ body{
 .h4ctitle{
     width:auto;
     height:7rem;
+    margin-top:40px;
 }
 .flexbox1{
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    margin-top:0;
+    margin-top:20px;
 }
 .links{
     list-style-type: none;
@@ -251,9 +255,14 @@ margin-top: 15%;
 .dom{
   height: 140vh;
 }
-.dom h1,.card__title{
+.card__title{
   text-align: center;
   font-size: 3em;
+}
+.dom h1{
+  text-align: center;
+  font-size: 4em;
+  margin-top: 10px;
 }
 /*cards*/  * 
 
@@ -377,6 +386,12 @@ margin-top: 15%;
   }
 }
 @media (max-width:767px){
+  .nav{
+    margin-top: 20px;
+  }
+  .heading{
+    height: 100vh;
+  }
   .group{
     display: block;
     text-align: center;
