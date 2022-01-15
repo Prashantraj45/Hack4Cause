@@ -390,4 +390,7 @@ margin-top: 15%;
   #a2,#a3,#a4{
     margin-top: 10%;
   }
+  .about h2{
+    font-size: 2em;
+  }
 }
