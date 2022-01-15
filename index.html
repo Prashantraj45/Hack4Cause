@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/mediaquery.css">
 </head>
-<body>
+<body >
       <div id="overlay">
         <a href="#">Link1</a>
         <a href="#">Link2</a>
@@ -26,9 +26,8 @@
           <div></div>
         </div>
       </div>
-
-      <div class="homeparent" >
-          
+      <div id="particles-js"></div>
+      <div class="homeparent"  >
           <div class="heading">
             <div class="title">
               <img class="h4cmob" src="assets/images/H4C_redesigned_2@300x.png">
@@ -130,27 +129,7 @@
         </div>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    
-    <!-- stats.js -->
-    <script>
-      var count_particles, stats, update;
-      stats = new Stats;
-      stats.setMode(0);
-      stats.domElement.style.position = 'absolute';
-      stats.domElement.style.left = '0px';
-      stats.domElement.style.top = '0px';
-      document.body.appendChild(stats.domElement);
-      count_particles = document.querySelector('.js-count-particles');
-      update = function() {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-      };
-      requestAnimationFrame(update);
-    </script>
+
     
         <script>
           (() => {
