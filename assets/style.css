@@ -81,6 +81,7 @@ body{
 .ssit-logo{
     margin-left:3.4rem;
     padding-top:2rem;
+    margin-top: 50px;
 }
 .ssit-logo img{
     float:left;
@@ -135,10 +136,10 @@ body{
 .btns{
     display: block;
     list-style-type: none;
-    cursor: pointer;
     }
     .btns li{
       padding: 20px;
+      z-index: 10;
     }
     #register {
       font-family: "Poppins";
@@ -149,6 +150,7 @@ body{
       width: 250px;
       color: white;
       cursor: pointer;
+      z-index: 5;
     }
     
     #register { 
@@ -164,6 +166,7 @@ body{
 /*removing the mobile div of h4c logo */
 .h4cmob{
     display:none;
+    margin-left: 20px;
 }
 /* removing mobile div of timer */
 .timer-mob{
@@ -431,7 +434,7 @@ margin-top: 15%;
     transition: all 0.2s;
   }
   .card__title{
-    font-weight: 250;
+    font-weight: 500;
     font-size: 1.8em;
     text-align: center;
   }
@@ -441,5 +444,11 @@ margin-top: 15%;
   .flexbox1{
     padding: 0px;
     margin-right: 10px;
+}
+.cardlogo{
+  height: 40px;
+  width: 34px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 }
