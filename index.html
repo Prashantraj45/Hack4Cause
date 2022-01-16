@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./assets/navstyle.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/mediaquery.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body >
       <div id="overlay">
@@ -27,32 +31,31 @@
         </div>
       </div>
       <div id="particles-js"></div>
-      <div class="homeparent"  >
+      <div class="homeparent">
           <div class="heading">
             <div class="title">
               <img class="h4cmob" src="assets/images/H4C_redesigned_2@300x.png">
               <img class="h4ctitle" src="assets/images/Mask Group.png">
               <div class="flexbox1">
-                    <ul class="links">
-                      <div class="timer-desk">
-                        <div class="dhm">
-                          <span class="days">DAYS</span>
-                          <span class="hours">HOURS</span>
-                          <span class="minutes">MINUTES</span>
-                        </div>
-                      </div>
+                    <ul id="countdown">
+                      <li><p><span id="days"></span>:</p></li>
+                      <li><span id="hours"></span>:</li>
+                      <li><span id="minutes" style="color: #EB1616;"></span>:</li>
+                      <li><span id="seconds" style="color: #EB1616;"></span></li>
                     </ul>
                     <ul class="btns">
                       <li><button id="register">Register Now</button></li>
                       <li>
                         <a href="#" target="_blank">
                               <button id="register">
+                                <span class="dc">
                                 <img
                                 height="32px"
                                 src="./assets/images/discord-logo.png"
                                 alt="discord"
                                 />
                                 Join our discord
+                              </span>
                               </button>
                             </a>
                         </li>
@@ -76,30 +79,30 @@
               </P>
             </div>
             <div class="dom">
-              <h1>DOMAINS</h1>
+              <h1><span style="color: #EB1616;">DOM</span>AINS</h1>
               <div class="main-container">
                 <div class="cards">
-                  <div class="card card-1">
+                  <div class="card">
                     <h2 class="card__title">Block Chain</h2>
                     <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
                   </div>
-                  <div class="card card-2">
+                  <div class="card">
                     <h2 class="card__title">Internet of Things</h2>
                     <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
                   </div>
-                  <div class="card card-3">
+                  <div class="card" >
                     <h2 class="card__title">Cyber Security</h2>
                     <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
                   </div>
-                  <div class="card card-4">
+                  <div class="card" >
                     <h2 class="card__title">Image Processing</h2>
                     <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
                   </div>
-                  <div class="card card-5">
+                  <div class="card" >
                     <h2 class="card__title">Software Developement</h2>
                     <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
                   </div>
-                  <div class="card card-1">
+                  <div class="card">
                     <h2 class="card__title">Artificial Intelligence</h2>
                     <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
                   </div>
@@ -114,9 +117,88 @@
                 <h3 id="a4">EDUCATION PARTNER</h3>
               </div>
             </div>
+            <div class="contacts">
+              <h1><span style="color: #EB1616;">CONT</span>ACT US</h1>
+              <div class="con">
+                <div class="con1">
+                  <img src="./assets/images/IEEE_SSIT_Logo-e1589395691479 2.png">
+                </div>
+                <div class="con2">
+                  <h3>
+                    <p>
+                    Vellore Institute of Technology<br>
+                    Vellore, Tamil Nadu - 632014
+                  </p>
+                  <p>
+                    Email Us
+                    ieeessit@vit.ac.in
+                  </p>
+                  <p>
+                    Reach us at<br>
+                    +91 7294992887<span style="margin-left: 10px;"></span>+91 9513017739
+                    </p>
+                    <p>
+                    ® IEEE SSIT - VIT All Rights Reserved.
+                  </p>
+                  </h3>
+                </div>
+              </div>
+              <div class="soc">
+                <ul>
+                  <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a></li>
+                  <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/inshot.png"/></a></li>
+                  <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/youtube-play--v2.png"/></a></li>
+                  <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"/></a></li>
+                </ul>
+              </div>
+            </div>
+            
         </div>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "03/05/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+    
+    </script>
 
     
         <script>
