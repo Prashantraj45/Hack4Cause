@@ -240,6 +240,7 @@ ul{list-style-type: none;}
   background-image: url("./images/sponsor-bg.png");
   animation: bg 10s linear infinite;
   height: 100vh;
+  z-index: 10;
 }
 #clients h2{
   font-size: 3em;
@@ -276,6 +277,9 @@ margin-top: 15%;
 }
 .dom{
   height: 100vh;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  z-index: 10;
 }
 .card__title{
   text-align: center;
@@ -290,6 +294,7 @@ margin-top: 15%;
 
 .main-container {
   padding: 30px;
+  
 }
 
 /* HEADING */
@@ -323,6 +328,7 @@ margin-top: 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content:flex-end;
+  
 }
 
 .card {
@@ -512,9 +518,6 @@ margin-top: 15%;
 .soc{
   left:50%;
 }
-.wht img{
-  width: 77px;
-}
 /* RESPONSIVE */
 
 @media (max-width: 1600px) {
@@ -548,7 +551,7 @@ margin-top: 15%;
     padding-top: 25px;
   }
   .dom{
-    height: 100vh;
+    height: 80vh;
     margin-bottom: 100%;
     margin-top: 20%;
   }
