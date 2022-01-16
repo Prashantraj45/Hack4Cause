@@ -512,6 +512,9 @@ margin-top: 15%;
 .soc{
   left:50%;
 }
+.wht img{
+  width: 77px;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1600px) {
@@ -623,5 +626,12 @@ margin-top: 15%;
 .flexbox1{
   margin: 0px;
   padding: 0px;
+}
+.wht{
+  display: block;
+}
+
+.con1,.con2{
+  padding-top: 0px;
 }
 }
