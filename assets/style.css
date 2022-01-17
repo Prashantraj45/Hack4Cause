@@ -343,9 +343,12 @@ margin-top: 15%;
   transition: all 0.2s;
 }
 
-.card:hover {
+.card:hover,.cardi:hover {
   box-shadow: 2px 2px 2px 2px #EB1616;
   transform: scale(1.2);
+}
+.cards{
+  border-color:5px solid #EB1616;
 }
 
 .card__link,
@@ -384,6 +387,10 @@ margin-top: 15%;
 /* CARD BACKGROUNDS */
 
 .card{
+  background:#ffeded;
+  color: #212121;
+}
+.cardi{
   background:#ffeded;
   color: #212121;
 }
@@ -543,19 +550,19 @@ margin-top: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #5BA3BA;
+  background: #ffeded;
   border-radius: 5px;
 
 }
 
 .faq-label-text {
-  color: white;
+  color:#212121;
 
 }
 
 .faq-label-icon {
   padding: 2px 3px;
-  background: #43BEE6;
+  background:#EB1616;
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -603,12 +610,28 @@ margin-top: 15%;
 }
 .global-label-text{
   font-size:18px;
-  color:#196B85;
+  color:#f6f8f8;
 }
-
-
-
-
+.tracklogo{
+  height: 50px;
+  width: 44px;
+  margin-left: 90%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  grid-row: 4;
+}
+.cardi {
+  margin: 20px;
+  padding:  0px;
+  width: 550px;
+  min-height: 300px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  text-align: center;
+  align-items: center;
+}
 
 
 @-webkit-keyframes scroll {
@@ -664,15 +687,51 @@ margin-top: 15%;
   display: flex;
   width: calc(250px * 14);
 }
-
+.title_tracks{
+  text-align: center;
+  padding: 5px;
+  grid-row: 2;
+  font-weight: 500;
+  font-size: 30px;
+  color: #212121;
+}
+#pt{
+  text-align: center;
+  grid-row: 3;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  
+}
+.time{
+  height: 100vh;
+  text-align: center;
+  font-family:'Poppins';
+}
+.time h1{
+  font-size: 64px;
+}
+.timeline-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.timeline-body {
+  font-size: 26px;
+  color:#EB1616;
+  margin-bottom: 25px;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1600px) {
   .cards {
-    justify-content: center;
+    justify-content:center;
   }
 }
 @media (max-width:767px){
+  .title_tracks{
+    font-size: 30px;
+  }
   #countdown li{
     font-size: 44px;
     font-weight: 500px;
@@ -692,14 +751,17 @@ margin-top: 15%;
     margin-top: 10%;
     font-size: 1.5em;
   }
+  .about{
+    height: 120vh;
+  }
   .about h2{
     font-size: 2.5em;
     padding-bottom: 0px;
     padding-top: 25px;
   }
   .dom{
-    height: 80vh;
-    margin-bottom: 100%;
+    height: 75vh;
+    margin-bottom: 30%;
     margin-top: 20%;
   }
   .about p{
@@ -789,5 +851,15 @@ margin-top: 15%;
   margin: 5px;
   position: relative;
   height: auto;
+}
+.main-container{
+  padding: 7px;
+}
+.tracklogo{
+  height: 40px;
+  width: 34px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 84%;
 }
 }
