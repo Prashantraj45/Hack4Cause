@@ -37,7 +37,7 @@
     height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
     display: flex;
     align-items: center;
-    position: absolute;
+    position: fixed !important;
     z-index: 200;
   }
   
