@@ -1072,10 +1072,12 @@ ul{
     overflow-x: scroll;
     display: flex;
     flex-direction: row;
+    padding: 50px;
     }
     .cardi{
       min-height: 420px;
       min-width: 300px;
+      padding: 10px;
     }
 }
 @media (min-width: 900px) {
