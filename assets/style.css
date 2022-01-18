@@ -153,7 +153,7 @@ ul{list-style-type: none;}
     }
     .btns li{
       padding: 20px;
-      padding-left: 50px;
+      padding-left: 20px;
       z-index: 10;
     }
     #register {
@@ -731,6 +731,9 @@ margin-top: 15%;
   padding-top: 15px;
   
 }
+.timeline-wrap{
+  padding: 50px;
+}
 
 .timeline-main h1{
   text-align: center;
@@ -908,7 +911,7 @@ ul{
     padding-top: 25px;
   }
   .dom{
-    height: 120vh;
+    height: 100vh;
     margin-bottom: 30%;
     margin-top: 20%;
   }
@@ -923,7 +926,7 @@ ul{
     margin: 20px;
     padding: 0px;
     min-width: 300px;
-    height: 300px;
+    height: 220px;
     display: grid;
     grid-template-rows: 10px 25px 10px 25px;
     border-radius: 5px;
@@ -1015,6 +1018,7 @@ ul{
   margin: 5px;
   position: relative;
   height: auto;
+  padding-bottom: 60px;
 }
 .main-container{
   padding: 7px;
