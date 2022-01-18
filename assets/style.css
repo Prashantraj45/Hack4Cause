@@ -344,7 +344,7 @@ margin-top: 15%;
   margin: 0;
   margin-left:0px;
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 1.3rem;
   height: inherit;
   margin: 0 auto;
   
@@ -898,7 +898,7 @@ ul{
 /* RESPONSIVE */
 @media (max-width:600px){
 #dm{
-  height: 170vh;
+  height: 200vh;
 }
 }
 @media (max-width:767px){
@@ -934,10 +934,6 @@ ul{
     padding-top: 25px;
     padding: 15px;
   }
-  .dom{
-    margin-bottom: 30%;
-    margin-top: 10%;
-  }
   
   .about p{
     text-align: center;
@@ -949,10 +945,10 @@ ul{
   .card__title{
     text-align: center;
     flex-basis: 50%;
-    transform: translateY(35%);
+    transform: translateY(75%);
   }
   .card{
-    min-height: 9em;
+    min-height: 11em;
   }
   .card:hover {
     box-shadow: 2px 2px 2px 2px #EB1616;
@@ -981,9 +977,9 @@ ul{
 .cardlogo{
   height: 50px;
   width: 44px;
-  margin-top: 5px;
+  margin-top: 15%;
   margin-bottom: 10px;
-  margin-left: 82%;
+  margin-left: 85%;
 }
 #cnt{
   flex-basis: 35%;
@@ -1073,6 +1069,9 @@ ul{
     display: flex;
     flex-direction: row;
     padding: 50px;
+    }
+    .cards{
+      padding: 30px;
     }
     .cardi{
       min-height: 420px;
