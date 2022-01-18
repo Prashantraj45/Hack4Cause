@@ -221,7 +221,7 @@ ul{list-style-type: none;}
     text-align: center;
     left: 50%;
     padding-bottom: 5%;
-    font-size: 64px;
+    font-size: 54px;
   }
   .about p{
     text-align: center;
@@ -293,7 +293,7 @@ margin-top: 15%;
 }
 .dom h1,.fq h2{
   text-align: center;
-  font-size: 64px;
+  font-size: 54px;
   margin-top: 10px;
 }
 /*cards*/  * 
@@ -527,7 +527,7 @@ margin-top: 15%;
   text-align: center;
   margin-top: 20px;
   padding-top: 1.6em;
-  font-size: 64px;
+  font-size: 54px;
 }
 .con{
   display: flex;
@@ -746,7 +746,7 @@ margin-top: 15%;
 
 .timeline-main h1{
   text-align: center;
-  font-size: 64px;
+  font-size: 54px;
   margin-top: 10px;
 }
 @media (max-width:767px){
@@ -867,7 +867,7 @@ ul{
   .entry {
     width: 100%;
     margin-left: 0;
-    padding-left: 64px;
+    padding-left: 54px;
     padding-right: 20px;
   }
   .entry:before {
