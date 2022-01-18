@@ -349,14 +349,14 @@ margin-top: 15%;
   margin: 0 auto;
   
 }
-.cards::-webkit-scrollbar-track,.timeline-main::-webkit-scrollbar-track
+#tracks::-webkit-scrollbar-track,.timeline-main::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: white;
   
 }
 
-.cards::-webkit-scrollbar,.timeline-main::-webkit-scrollbar
+#tracks::-webkit-scrollbar,.timeline-main::-webkit-scrollbar
 {
 	width: 6px;
   height: 10px;
@@ -364,7 +364,7 @@ margin-top: 15%;
   
 }
 
-.cards::-webkit-scrollbar-thumb,.timeline-main::-webkit-scrollbar-thumb
+#tracks::-webkit-scrollbar-thumb,.timeline-main::-webkit-scrollbar-thumb
 {
 	background-color:#EB1616;
 }
@@ -743,7 +743,7 @@ margin-top: 15%;
   margin-top: 10px;
 }
 #tracks{
-  height: 130vh;
+  height: 150vh;
   overflow-y: scroll;
 }
 #dm{
@@ -1079,8 +1079,23 @@ ul{
       min-width: 300px;
       padding: 10px;
     }
+ 
 }
 @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 1fr); 
+  .cards,.cardsi{ grid-template-columns: repeat(3, 1fr); 
   }
+  }
+  @media (max-width: 900px) {
+    .cards,.cardsi{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 570px) {
+    .cards{
+      display: flex;
+      flex-direction: column;
+    }
+    .card{
+      max-width: 400px;
+    }
   }
