@@ -1046,6 +1046,12 @@ ul{
 }
 }
 @media (max-width: 695px) {
+  .bttn{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+  }
   .main-container{
     padding: 10px;
   }
@@ -1060,7 +1066,7 @@ ul{
   }
   #tracks{
     overflow-y: hidden;
-    height: 100vh;
+    height: 120vh;
     margin-bottom: 0vh;
   }
   .cardsi { 
@@ -1091,10 +1097,11 @@ ul{
   }
   @media (max-width: 570px) {
     .cards{
-      display: flex;
+      display: flex !important;
       flex-direction: column;
     }
     .card{
       max-width: 400px;
     }
+    
   }

@@ -198,52 +198,52 @@
     <div class="dom" id="tracks">
       <h1><span style="color: #EB1616;">TRA</span>CKS</h1>
       <div class="main-container">
-        <div class="cardsi">
-          <div class="cardi">
+        <div class="cardsi" id="cards-con">
+          <div class="cardi" id="c1">
             <h2 class="title_tracks">Healthcare</h2>
             <p id="pt">In India, considerable work has been done to reform the healthcare sector, which has involves the
               government and various stakeholders. Delivering affordable health care to billions of people presents
               enormous challenges for the medical community</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c2">
             <h2 class="title_tracks">Agriculture</h2>
             <p id="pt">Being the primary source of income for more than half the nation, advancements in the field of
               agriculture are synchronous with the nation's strides towards becoming a global superpower.</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c3">
             <h2 class="title_tracks">Education & Productivity</h2>
             <p id="pt">Education is the foundation on which the development of every citizen and the nation as a whole
               built on.Productivity is very essential in every sector for rapid development</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c4">
             <h2 class="title_tracks">Crisis and Disaster Management</h2>
             <p id="pt">Disaster Management can be defined as the organization and management of resources and
               responsibilities for dealing with all humanitarian aspects of emergencies.</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c5">
             <h2 class="title_tracks">Security & Surveillance</h2>
             <p id="pt">Security and surveillance are implemented by criminal justice agencies to maintain order, enforce
               the law and to reduce victimization in the society.</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c6">
             <h2 class="title_tracks">Industrial Development</h2>
             <p id="pt">With the start of industrial revolution in late 1800s, industrial development is seen as a key
               player to determine a nation's human development and quality of living.</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c7">
             <h2 class="title_tracks">Open Innovation</h2>
             <p id="pt">Open innovation is a concept AI originated that falls directly in the gap between business and
               academics. It leads to greater technological advancements in a relatively shorter time because together we
               work, together we innovate.</p>
             <img class="tracklogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
-          <div class="cardi">
+          <div class="cardi" id="c8">
             <h2 class="title_tracks">Fintech</h2>
             <p id="pt">Fintech has also been a key game changer for entrepreneurs, making it easier for startups and
               small businesses to secure loans, manage payroll, and process payments.</p>
@@ -251,6 +251,16 @@
           </div>
         </div>
       </div>
+      <span class="bttn" style="display: none;">
+      <a id="btn1"><svg  xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+      </svg>
+    </a>
+      <a id="btn2"><svg id="btn2" xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg>
+    </a>
+    </span>
     </div>
     <div class="fq" id="fqt">
       <h2><span style="color: #EB1616">FA</span>Q</h2>
@@ -502,6 +512,36 @@
       p.addEventListener("click", function() {
   alert("UNDER CONSTRUCTION!");
 });
+    </script>
+    <script type="text/javascript">
+      function slide(direction,cnt){
+    var container = document.getElementById('cards-con');
+        if(direction == 'left'){
+          if(cnt>0){
+            cnt=cnt-1;
+            var kl=`c${cnt}`;
+            kl.scrollIntoView(true);
+
+          }
+        } else {
+          if(cnt<7){
+            cnt=cnt+1;
+            var kl=`c${cnt}`;
+            kl.scrollIntoView(true);
+
+          }
+        }
+}
+var p=document.getElementById('btn1');
+var k=document.getElementById('btn2');
+var cnt=0;
+      p.addEventListener("click", function() {
+  slide("left",cnt);
+});
+k.addEventListener("click", function() {
+  slide("right",cnt);
+});
+
     </script>
     </body>
 
