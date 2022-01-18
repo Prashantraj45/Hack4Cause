@@ -1035,7 +1035,7 @@ ul{
 }
 .faq {
   min-width:350px;
-  margin: 5px;
+  margin: 0px;
   position: relative;
   height: auto;
   padding-bottom: 60px;
