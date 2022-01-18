@@ -943,7 +943,7 @@ ul{
 }
   .card:hover {
     box-shadow: 2px 2px 2px 2px #EB1616;
-    transform: scale(1.2);
+    transform: scale(1.04);
   }
   .cardi:hover{
     transform: scale(1.04) !important;
