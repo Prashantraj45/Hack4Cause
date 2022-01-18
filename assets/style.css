@@ -662,7 +662,7 @@ margin-top: 15%;
   margin: 5px;
   padding:  0px;
   max-width: 300px;
-  min-height: 300px;
+  min-height: 350px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;
@@ -727,7 +727,7 @@ margin-top: 15%;
 }
 .title_tracks{
   text-align: center;
-  padding: 5px;
+  padding: 9px;
   grid-row: 2;
   font-weight: 500;
   font-size: 30px;
