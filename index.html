@@ -12,8 +12,9 @@
   <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/mediaquery.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
+<body>
 <div>
   <div id="overlay">
     <a href="#home">HOME</a>
@@ -177,7 +178,7 @@
             <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
           <div class="card">
-            <h2 class="card__title">Software Development</h2>
+            <h2 class="cardtit">Software Development</h2>
             <img class="cardlogo" src="assets/images/H4C_redesigned_2@300x.png">
           </div>
           <div class="card">
@@ -252,10 +253,10 @@
         </div>
       </div>
       <span class="bttn" style="display: none;">
-      <a id="btn1"><svg  xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+      <span id="btn1"><svg  xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
       </svg>
-    </a>
+    </span>
       <a id="btn2"><svg id="btn2" xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
       </svg>
@@ -508,41 +509,26 @@
 
     </script>
     <script>
+      
       var p=document.getElementById('nbtn');
       p.addEventListener("click", function() {
   alert("UNDER CONSTRUCTION!");
 });
     </script>
-    <script type="text/javascript">
-      function slide(direction,cnt){
-    var container = document.getElementById('cards-con');
-        if(direction == 'left'){
-          if(cnt>0){
-            cnt=cnt-1;
-            var kl=`c${cnt}`;
-            kl.scrollIntoView(true);
-
-          }
-        } else {
-          if(cnt<7){
-            cnt=cnt+1;
-            var kl=`c${cnt}`;
-            kl.scrollIntoView(true);
-
-          }
-        }
-}
-var p=document.getElementById('btn1');
-var k=document.getElementById('btn2');
-var cnt=0;
-      p.addEventListener("click", function() {
-  slide("left",cnt);
+    <script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    var leftPos = $('.cardsi').scrollLeft();
+  $(".cardsi").animate({scrollLeft: leftPos - 325}, 800);
+  });
+  $("#btn2").click(function(){
+    var leftPos = $('.cardsi').scrollLeft();
+  $(".cardsi").animate({scrollLeft: leftPos + 325}, 800);
+  });
 });
-k.addEventListener("click", function() {
-  slide("right",cnt);
-});
-
     </script>
+    
+
     </body>
 
 </html>

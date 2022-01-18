@@ -898,7 +898,7 @@ ul{
 /* RESPONSIVE */
 @media (max-width:600px){
 #dm{
-  height: 200vh;
+  height: 250vh;
 }
 }
 @media (max-width:767px){
@@ -1084,7 +1084,13 @@ ul{
       min-width: 300px;
       padding: 10px;
     }
- 
+    .cardtit{
+    font-weight: 500;
+    font-size: 1.7em;
+    padding: 5px;
+    text-align: center;
+    transform: translateY(50%);
+    }
 }
 @media (min-width: 900px) {
   .cards,.cardsi{ grid-template-columns: repeat(3, 1fr); 
