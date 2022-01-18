@@ -299,9 +299,9 @@ margin-top: 15%;
 /*cards*/  * 
 
 .main-container {
-  padding: 30px;
+  padding: 20px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 /* HEADING */
@@ -332,12 +332,13 @@ margin-top: 15%;
 /* CARDS */
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content:space-between;
-  overflow-y:hidden;
-  overflow-x:hidden scroll;
+  max-width: 1000px;
+  margin: 0;
+  margin-left:0px;
+  display: grid;
+  grid-gap: 0.5rem;
+  height: inherit;
+  margin: 0 auto;
   
 }
 .card{
@@ -364,10 +365,10 @@ margin-top: 15%;
 }
 
 .card {
-  margin: 20px;
+  margin: 10px;
   padding:  5px;
-  min-width: 400px;
-  height: 300px;
+  max-height: 14em;
+  width: auto;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;
@@ -409,7 +410,7 @@ margin-top: 15%;
   font-weight: 500;
   color: #212121;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 0;
 }
 
 .card__apply {
@@ -431,9 +432,9 @@ margin-top: 15%;
 .cardlogo{
   height: 50px;
   width: 44px;
-  margin-left: 87%;
+  margin-left: 85%;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .cardi{
 
@@ -652,15 +653,15 @@ margin-top: 15%;
 .tracklogo{
   height: 50px;
   width: 44px;
-  margin-left: 90%;
+  margin-left: 85%;
   margin-top: 0px;
   margin-bottom: 20px;
   grid-row: 4;
 }
 .cardi {
-  margin: 20px;
+  margin: 5px;
   padding:  0px;
-  min-width: 550px;
+  min-width: 350px;
   min-height: 300px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
@@ -856,6 +857,10 @@ ul{
   list-style-type: none;
 }
 
+#time h3{
+  text-align: center;
+  margin-top: 10%;
+}
 @media all and (max-width: 500px) {
   .timeline:after {
     left: 33.75px;
@@ -881,6 +886,9 @@ ul{
   .entry:after {
     left: 15px;
   }
+}
+#tracks{
+  margin-bottom: 70vh;
 }
 /*tl ends*/
 
@@ -922,9 +930,9 @@ ul{
     padding: 15px;
   }
   .dom{
-    height: 100vh;
+    height: auto;
     margin-bottom: 30%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .about p{
     text-align: center;
@@ -933,34 +941,11 @@ ul{
     margin-top: 2%;
     font-size: 1em;
   }
-  .card {
-    margin: 20px;
-    padding: 0px;
-    min-width: 330px;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: 10px 25px 10px 25px;
-    border-radius: 5px;
-    transition: all 0.2s;
-  }
   .card__title{
     flex-basis: 50%;
     text-align: center;
     margin-top: 0%;
   }
-  .cardi {
-    margin: 20px;
-    padding: 0px;
-    min-width: 330px;
-    min-height: 400px;
-    display: grid;
-    grid-template-rows: 20px 50px 1fr 50px;
-    border-radius: 10px;
-    transition: all 0.2s ease 0s;
-    text-align: center;
-    align-items: center;
-}
   .card:hover {
     box-shadow: 2px 2px 2px 2px #EB1616;
     transform: scale(1.04);
@@ -1040,8 +1025,9 @@ ul{
   height: auto;
   padding-bottom: 60px;
 }
+
 .main-container{
-  padding: 7px;
+  padding: 5px;
 }
 .tracklogo{
   height: 40px;
@@ -1050,4 +1036,13 @@ ul{
   margin-bottom: 10px;
   margin-left: 84%;
 }
+}
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); 
+  
+  }
 }
