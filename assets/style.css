@@ -233,7 +233,7 @@ ul{list-style-type: none;}
     text-align: center;
     margin-left: 16%;
     margin-right: 16%;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .about{
     height: 100vh;
@@ -1106,7 +1106,10 @@ ul{
     }
 }
 @media (min-width: 900px) {
-  .cards,.cardsi{ grid-template-columns: repeat(3, 1fr); 
+  .cards,.cardsi{ grid-template-columns: repeat(3, 1fr);
+  }
+  .cards{
+    margin-top: 5%;
   }
   }
   @media (max-width: 900px) {
