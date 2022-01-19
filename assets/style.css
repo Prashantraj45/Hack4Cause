@@ -1090,7 +1090,7 @@ ul{
   height: 40px;
   width: 34px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
   margin-left: 84%;
 }
 }
@@ -1112,6 +1112,7 @@ ul{
   }
   .tracklogo{
     flex-basis: 10%;
+    margin-bottom: 0px;
   }
   #tracks{
     overflow-y: hidden;
