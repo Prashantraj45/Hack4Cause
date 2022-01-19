@@ -573,7 +573,7 @@ margin-top: 15%;
   padding: 20px;
   width: 60%;
   min-width:450px;
-  margin: auto;
+  margin:0 auto;
   position: relative;
   height: auto;
 }
@@ -752,7 +752,7 @@ margin-top: 15%;
   overflow-y: scroll;
 }
 #dm{
-  height: 130vh;
+  height: 110vh;
 }
 @media (max-width:767px){
   .timeline-main h1{
@@ -911,7 +911,7 @@ ul{
 /* RESPONSIVE */
 @media (max-width:600px){
 #dm{
-  height: 250vh;
+  height: 250vh !important;
 }
 }
 @media (max-width:767px){
@@ -1118,6 +1118,9 @@ ul{
     }
     .con1{
       padding: 5px;
+    }
+    #dm{
+      height: 130vh;
     }
   }
   @media (max-width: 570px) {
