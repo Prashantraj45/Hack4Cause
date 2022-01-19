@@ -380,7 +380,7 @@ margin-top: 15%;
 
 .card:hover,.cardi:hover {
   box-shadow: 2px 2px 2px 2px #EB1616;
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .cards{
   border-color:5px solid #EB1616;
@@ -538,13 +538,17 @@ margin-top: 15%;
 }
 .con1,.con2{
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin:0 auto;
   flex-basis: 50%;
   padding-top: 40px;
 }
+.con1{
+  padding: 100px;
+}
 .con1 img{
   margin-top: 40px;
+  height: 150px;
+  width: auto;
 }
 .con2 h3{
   padding-top: 60px;
@@ -653,7 +657,7 @@ margin-top: 15%;
 .tracklogo{
   height: 50px;
   width: 44px;
-  margin-left: 85%;
+  margin-left: 82%;
   margin-top: 0px;
   margin-bottom: 20px;
   grid-row: 4;
@@ -732,6 +736,7 @@ margin-top: 15%;
   text-align: center;
   grid-row: 3;
   padding: 5px;  
+  flex-basis: 70%;
 }
 .timeline-wrap{
   padding: 50px;
@@ -747,7 +752,7 @@ margin-top: 15%;
   overflow-y: scroll;
 }
 #dm{
-  height: 120vh;
+  height: 130vh;
 }
 @media (max-width:767px){
   .timeline-main h1{
@@ -1039,7 +1044,7 @@ ul{
   position: relative;
   height: auto;
   padding-bottom: 60px;
-  margin-left: 7px;
+  margin-left: -5px;
 }
 
 .main-container{
@@ -1107,6 +1112,9 @@ ul{
   @media (max-width: 900px) {
     .cards,.cardsi{
       grid-template-columns: repeat(2, 1fr);
+    }
+    .con1{
+      padding: 5px;
     }
   }
   @media (max-width: 570px) {
