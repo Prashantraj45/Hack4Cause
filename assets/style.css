@@ -111,7 +111,7 @@ ul{list-style-type: none;}
 }
 /* heading styling and positioning */
 .heading{
-    margin-top:1.0rem;
+    margin-top:3.0rem;
     height: 100%;
     margin-right: 0px;
 }
@@ -122,8 +122,8 @@ ul{list-style-type: none;}
     font-size:2rem;
 }
 .h4ctitle{
-    width:50%;
-    height:8rem;
+    width:auto;
+    height:5rem;
     margin-top:40px;
 }
 .flexbox1{
