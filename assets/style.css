@@ -418,14 +418,28 @@ ul{list-style-type: none;}
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  transform: translateY(150px);
+  opacity:0;
+  text-align:justify;
+  transition:0.3s all ease-in-out;
 }
 
 .card:hover,.cardi:hover {
   box-shadow: 2px 2px 2px 2px #EB1616;
   transform: scale(1.04);
+  opacity:1;
 }
 .cards{
   border-color:5px solid #EB1616;
+}
+.active1{
+  transform: translateY(0px);
+  opacity:1;
+
+}
+.active2{
+  transform: translateY(0px);
+  opacity:1 !important;
 }
 
 .card__link,
@@ -469,6 +483,10 @@ ul{list-style-type: none;}
   background:#ffeded;
   color: #212121;
   border-radius: 10px;
+  transform: translateY(50px);
+  opacity:0;
+  text-align:justify;
+  transition:0.3s all ease-in-out;
 }
 
 .cardlogo{
@@ -790,7 +808,7 @@ ul{list-style-type: none;}
   margin-top: 10px;
 }
 #tracks{
-  height: 150vh;
+  height: 160vh;
   overflow-y: scroll;
 }
 #dm{
@@ -1131,6 +1149,7 @@ ul{
     display: flex;
     flex-direction: row;
     padding: 50px;
+    
     }
     .cards{
       padding: 30px;
