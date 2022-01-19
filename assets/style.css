@@ -251,6 +251,7 @@ ul{list-style-type: none;}
   animation: bg 10s linear infinite;
   height: 100vh;
   z-index: 10;
+  
 }
 #clients h2 {
   font-size: 3em;
@@ -271,6 +272,7 @@ ul{list-style-type: none;}
   position: relative;
   left: 0%;
   padding: 2%;
+  margin: 0 auto;
 }
 .groupspon img {
   height: 70px;
@@ -292,6 +294,7 @@ ul{list-style-type: none;}
     height: 70px;
     width : auto;
     padding: 5px;
+    margin: 0 auto;
   }
 
 .premium img {
