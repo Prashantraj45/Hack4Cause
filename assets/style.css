@@ -266,13 +266,16 @@ ul{list-style-type: none;}
 
 .groupspon {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
   left: 0%;
   padding: 2%;
   margin: 0 auto;
+}
+.groupspon{
+  margin: 10px;
 }
 .groupspon img {
   height: 70px;
