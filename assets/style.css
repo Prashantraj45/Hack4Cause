@@ -1197,7 +1197,7 @@ ul{
     .groupspon img {
       height: 70px;
       width : auto;
-      padding: 5px;
+      padding: 10px;
     }
     #clients h2 {
       font-size: 3em;
@@ -1211,6 +1211,9 @@ ul{
   
     #clients h2{
       font-size: 2em;
+    }
+    .groupspon {
+      padding: 4%;
     }
   }
   
