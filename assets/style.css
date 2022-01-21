@@ -985,7 +985,7 @@ ul{
 }
 @media (max-width:767px){
   .title_tracks{
-    font-size: 30px;
+    font-size: 36px;
     margin-top: 15px;
   }
   #countdown li{
@@ -1119,9 +1119,7 @@ ul{
 .tracklogo{
   height: 80px;
   width: 68px;
-  margin-top: 35%;
-  margin-bottom:0px;
-  margin-left: 45%;
+  margin:40%;
   position: absolute;
   opacity: 0.3;
 }
@@ -1168,6 +1166,7 @@ ul{
       min-width: 300px;
       padding: 10px;
       transform: translateY(0px);
+      justify-content: space-around;
     }
     .cardtit{
     font-weight: 500;
