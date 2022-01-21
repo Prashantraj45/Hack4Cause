@@ -1166,6 +1166,7 @@ ul{
       min-height: 420px;
       min-width: 300px;
       padding: 10px;
+      transform: translateY(0px);
     }
     .cardtit{
     font-weight: 500;
