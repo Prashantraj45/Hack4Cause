@@ -15,11 +15,13 @@ body{
     
 }
 #abt,#time,#cnn,#tracks{
-  margin-top: 10vh;
+  margin-top: 2vh;
+  padding: 20px;
 }
 .homeparent{
   margin: auto;
 }
+
 ul{list-style-type: none;}
 #countdown {
   display: flex;
@@ -89,7 +91,8 @@ ul{list-style-type: none;}
         box-shadow: 10px 10px 41px -10px rgba(0,0,0,0.75);
       }
       .fq{
-        height: 80vh;
+        height: auto;
+        width: 100%;
       }
       
   .homeparent{
@@ -112,7 +115,8 @@ ul{list-style-type: none;}
 /* heading styling and positioning */
 .heading{
     margin-top:3.0rem;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin-right: 0px;
 }
 .before-title{
@@ -236,7 +240,8 @@ ul{list-style-type: none;}
     font-size: 1.3em;
   }
   .about{
-    height: 100vh;
+    width: 100%;
+    height: auto;
     padding-top: 5%;
     
     
@@ -386,7 +391,7 @@ ul{list-style-type: none;}
   margin: 0;
   margin-left:0px;
   display: grid;
-  grid-gap: 1.3rem;
+  grid-gap: 1.1rem;
   height: inherit;
   margin: 0 auto;
   
@@ -582,7 +587,8 @@ ul{list-style-type: none;}
   animation-timing-function: ease-out;
 }
 .contacts{
-  height: 100vh;
+  width: 100%;
+  height: auto;
 }
 .contacts h1{
   text-align: center;
@@ -611,7 +617,7 @@ ul{list-style-type: none;}
   width: auto;
 }
 .con2 h3{
-  padding-top: 60px;
+  padding-top: 25px;
 }
 .con2 h3 p{
   margin-top: 20px;
@@ -725,7 +731,7 @@ ul{list-style-type: none;}
 .cardi {
   padding:  0px;
   min-width: 320px;
-  max-height: 300px;
+  max-height: 320px;
   display: flex;
   flex-direction: column;
 }
@@ -808,11 +814,13 @@ ul{list-style-type: none;}
   margin-top: 10px;
 }
 #tracks{
-  height: 160vh;
+  width: 100%;
+  height: auto;
   overflow-y: scroll;
 }
 #dm{
-  height: 110vh;
+  width: 100%;
+  height: auto;
 }
 @media (max-width:767px){
   .timeline-main h1{
@@ -824,7 +832,8 @@ ul{list-style-type: none;}
 }
 
 .timeline-main{
-    height: 100vh;
+  width: 100%;
+  height: auto;
     overflow-y:scroll;
     overflow-x:hidden;
     z-index: 10;
@@ -954,9 +963,7 @@ ul{
     left: 15px;
   }
 }
-#tracks{
-  margin-bottom: 20vh;
-}
+
 /*tl ends*/
 .cardtit{
   font-weight: 500;
@@ -971,7 +978,7 @@ ul{
 /* RESPONSIVE */
 @media (max-width:600px){
 #dm{
-  height: 230vh !important;
+  height: auto !important;
 }
 }
 @media (max-width:767px){
@@ -987,7 +994,8 @@ ul{
     margin-top: 20px;
   }
   .heading{
-    height: 100vh;
+    width: 100%;
+    height: auto;
   }
   .group{
     display: block;
@@ -999,7 +1007,8 @@ ul{
     font-size: 1.5em;
   }
   .about{
-    height: 120vh;
+    width: 100%;
+    height: auto;
   }
   .about h2{
     font-size: 2.5em;
@@ -1035,9 +1044,6 @@ ul{
     font-size: 1.7em;
     padding: 5px;
     text-align: center;
-  }
-  #tracks{
-    margin-bottom: 20vh;
   }
   .dom h1,.fq h2{
     padding-top: 50px;
@@ -1099,23 +1105,24 @@ ul{
   padding-top: 0px;
 }
 .faq {
-  min-width:350px;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0px !important;
   position: relative;
   height: auto;
-  padding-bottom: 60px;
-  margin-left: -5px;
+  padding: 30px;
 }
 
 .main-container{
   padding: 30px;
 }
 .tracklogo{
-  height: 40px;
-  width: 34px;
-  margin-top: 5px;
-  margin-bottom: -10px;
-  margin-left: 84%;
+  height: 80px;
+  width: 68px;
+  margin-top: 35%;
+  margin-bottom:0px;
+  margin-left: 45%;
+  position: absolute;
+  opacity: 0.3;
 }
 }
 @media (max-width: 695px) {
@@ -1140,7 +1147,8 @@ ul{
   }
   #tracks{
     overflow-y: hidden;
-    height: 120vh;
+    width: 100%;
+    height: auto;
     margin-bottom: 0vh;
   }
   .cardsi { 
@@ -1171,7 +1179,7 @@ ul{
   .cards,.cardsi{ grid-template-columns: repeat(3, 1fr);
   }
   .cards{
-    margin-top: 5%;
+    margin-top: 2%;
   }
   }
   @media (max-width: 900px) {
@@ -1182,7 +1190,8 @@ ul{
       padding: 5px;
     }
     #dm{
-      height: 130vh;
+      width: 100%;
+      height: auto;
     }
   }
   @media (max-width: 570px) {
@@ -1200,7 +1209,8 @@ ul{
   }
   
   #clients {
-    height: 100vh;
+    width: 100%;
+    height: auto;
     /*overflow-y: scroll;*/
     text-align:center;
   }
