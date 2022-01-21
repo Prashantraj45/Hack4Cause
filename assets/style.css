@@ -638,7 +638,7 @@ ul{list-style-type: none;}
 .faq {
   padding: 20px;
   width: 60%;
-  min-width:450px;
+  min-width:250px;
   margin:0 auto;
   position: relative;
   height: auto;
@@ -1105,7 +1105,7 @@ ul{
   padding-top: 0px;
 }
 .faq {
-  width: 80%;
+  width: 90%;
   margin: 0px !important;
   position: relative;
   height: auto;
@@ -1136,7 +1136,7 @@ ul{
     padding: 10px;
   }
   .title_tracks{
-    flex-basis: 40%;
+    flex-basis: 30%;
   }
   #pt{
     flex-basis: 50%;
@@ -1156,7 +1156,7 @@ ul{
     overflow-x: scroll;
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    padding: 10px;
     
     }
     .cards{

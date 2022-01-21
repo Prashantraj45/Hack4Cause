@@ -5,7 +5,7 @@
   }
   
   .nav {
-    width: 100%;
+    width: auto;
     height: 0px;
     display: flex;
     background-color:transparent;
