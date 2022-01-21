@@ -1009,6 +1009,7 @@ ul{
   .about{
     width: 100%;
     height: auto;
+    margin-top: 5vh;
   }
   .about h2{
     font-size: 2.5em;
@@ -1019,10 +1020,8 @@ ul{
   
   .about p{
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    font-size: 1em;
+    margin: 0 auto;
+    font-size: 0.9em;
   }
   .card__title{
     text-align: center;
