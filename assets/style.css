@@ -489,7 +489,7 @@ ul{list-style-type: none;}
   background:#ffeded;
   color: #212121;
   border-radius: 10px;
-  transform: translateY(50px);
+  transform: translateY(20px);
   opacity:0;
   text-align:justify;
   transition:0.3s all ease-in-out;
@@ -502,9 +502,7 @@ ul{list-style-type: none;}
   margin-top: 10px;
   margin-bottom: 0px;
 }
-.cardi{
 
-}
 
 @-webkit-keyframes backInRight {
   0% {
@@ -818,7 +816,7 @@ ul{list-style-type: none;}
 #tracks{
   width: 100%;
   height: auto;
-  overflow-y: scroll;
+  overflow:hidden;
 }
 #dm{
   width: 100%;
@@ -1145,7 +1143,7 @@ ul{
     margin-bottom: 0px;
   }
   #tracks{
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100%;
     height: auto;
     margin-bottom: 0vh;
